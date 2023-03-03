@@ -44,14 +44,14 @@ button{
     font-size: 36px;
     color: #ffffff;
     text-shadow: 2px 2px 5px rgb(0, 0, 0);
-    cursor: crosshair;
+    cursor: pointer;
     z-index: 10;
 }
-button:hover~.text{
-    clip-path: polygon(120% 45%, 0 45%, 0 120%, 120% 120%);
+.show{
+    clip-path: circle(50% at 50% 90%);
 
 }
-.text{
+.text1, .text2{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -63,9 +63,9 @@ button:hover~.text{
     padding: 80px 30px;
     background-color: rgba(0,0,0,.85);
     color: #ffffff;
-    clip-path: polygon(51% 80%, 51% 80%, 51% 80%, 51% 80%);
+    clip-path: circle(0% at 50% 90%);
 
-    transition: clip-path.8s;
+    transition: clip-path.3s;
 }
 h1{
     color: rgb(182,179,97);
